@@ -1,2 +1,17 @@
-# sprint_4
-yandex practicum https://practicum.yandex.ru/profile/qa-automation-engineer-java/
+# запуск в Chrome
+
+```bash
+mvn test
+```
+
+# запуск с Firefox
+
+```bash
+mvn -Dbrowser=firefox test
+```
+
+если mvn test падает с ошибкой 500, и не находит бинарник, то запускаем с параметром
+
+```bash
+mvn -Dbrowser=firefox -Dwebdriver.firefox.bin=/usr/bin/firefox test
+```
