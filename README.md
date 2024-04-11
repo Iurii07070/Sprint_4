@@ -1,2 +1,17 @@
-# sprint_4
-yandex practicum https://practicum.yandex.ru/profile/qa-automation-engineer-java/
+# Running in Chrome
+
+```bash
+mvn test
+```
+
+# Running in Firefox
+
+```bash
+mvn -Dbrowser=firefox test
+```
+
+If mvn test fails with a 500 error and cannot find the binary, then run with the following parameter:
+
+```bash
+mvn -Dbrowser=firefox -Dwebdriver.firefox.bin=/usr/bin/firefox test
+```
