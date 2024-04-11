@@ -1,16 +1,16 @@
-# запуск в Chrome
+# Running in Chrome
 
 ```bash
 mvn test
 ```
 
-# запуск с Firefox
+# Running in Firefox
 
 ```bash
 mvn -Dbrowser=firefox test
 ```
 
-если mvn test падает с ошибкой 500, и не находит бинарник, то запускаем с параметром
+If mvn test fails with a 500 error and cannot find the binary, then run with the following parameter:
 
 ```bash
 mvn -Dbrowser=firefox -Dwebdriver.firefox.bin=/usr/bin/firefox test
